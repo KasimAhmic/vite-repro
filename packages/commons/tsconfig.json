@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client"],
+    "importHelpers": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

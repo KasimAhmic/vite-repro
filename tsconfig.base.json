@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": true,
+    "noEmit": false,
+    "paths": {
+      "@ahmic/commons": ["packages/commons/src"],
+      "@ahmic/components": ["packages/components/src"]
+    }
+  }
+}

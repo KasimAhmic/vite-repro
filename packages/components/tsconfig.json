@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src", "types", "src/@types/*.d.ts"],
+  "exclude": ["src/**/*.test.tsx"],
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
