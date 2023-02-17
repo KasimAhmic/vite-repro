@@ -2,6 +2,7 @@ import { postsSelectors, usePostsSelector, usersSelectors, useUsersSelector } fr
 import { Paper, Typography } from "@ahmic/components";
 import { EntityId } from "@reduxjs/toolkit";
 import React, { FC } from "react";
+import { useAnotherDummyHook } from "../hooks";
 
 interface PostProps {
   id: EntityId;
@@ -13,6 +14,8 @@ export const Post: FC<PostProps> = ({ id }) => {
   const userId = usePostsSelector((posts) => postsSelectors.selectById(posts, id)?.userId ?? 0);
 
   const userName = useUsersSelector((users) => usersSelectors.selectById(users, userId)?.name);
+
+  const dummyData = useAnotherDummyHook();
 
   return (
     <Paper elevation={2}>
